@@ -11,10 +11,9 @@ url ='https://www.google.com/'
 
 driver.get(url)
 
+element = driver.find_element(By.CLASS_NAME, 'gLFyf') # find javascript class
 
-element = driver.find_element(By.CLASS_NAME, 'gLFyf')
-
-element.send_keys('test')
+element.send_keys('test') # enter that want to serch
 element.send_keys(Keys.ENTER)
 #element.click()
 
